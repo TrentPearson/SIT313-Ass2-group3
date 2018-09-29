@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="White" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ResumeBuilder.View.ResumePreview">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            <Button Text="back" TextColor="White" Font="15" BackgroundColor="Black" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" Margin="10, 10, 10 ,0" Clicked="backBtn"/>
+            <Button Text="Add" TextColor="White" Font="15" BackgroundColor="Black" Grid.Row="0" Grid.Column="1" HorizontalOptions="End" Margin="10, 10, 10 ,0" Clicked="addResume"/>
+            </Grid>    
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

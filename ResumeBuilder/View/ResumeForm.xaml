@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="Navy" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ResumeBuilder.View.ResumeForm">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+                
+            <Button Text="back" TextColor="Navy" Font="15" BackgroundColor="White" WidthRequest="90" HorizontalOptions="Start" Margin="10, 10, 10 ,0" Clicked="backBtn"/>  
+       
+            <Label Text="About Me:" TextColor="White" Font="15" HorizontalOptions="Start" Margin="15, 20, 0, 0"/>
+            <Editor FontSize="15" Text="{Binding AboutMe}" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="350" HeightRequest="100" Margin="15, 0, 15, 0"/>
+ 
+                
+            <Label  Text="Skills:" TextColor="White" Font="15" WidthRequest="60" HorizontalOptions="Start" Margin="15, 20, 0, 0"/>
+            
+                
+            <Entry x:Name="skill1" Placeholder="skill 2" Text="{Binding S1}" TextColor="White" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="200" Margin="15, 5, 15, 0"/>
+            <Entry x:Name="skill2" Placeholder="skill 2" Text="{Binding S2}" TextColor="White" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="200" Margin="15, 5, 15, 0"/>    
+            <Entry x:Name="skill3" Placeholder="skill 3" Text="{Binding S3}" TextColor="White" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="200" Margin="15, 5, 15, 0"/>
+            <Entry x:Name="skill4" Placeholder="skill 4" Text="{Binding S4}" TextColor="White" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="200" Margin="15, 5, 15, 0"/>
+            <Entry x:Name="skill5" Placeholder="skill 5" Text="{Binding S5}" TextColor="White" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="200" Margin="15, 5, 15, 0"/>   
+                
+            <Label Text="Professional Experiences:" TextColor="White" Font="15" Margin="15, 20, 0, 0"/>
+            <Entry Placeholder="Company Name 1" Text="{Binding C1}" FontSize="10" BackgroundColor="White" WidthRequest="50" Margin="15, 0, 15, 0"/>
+            <Entry Placeholder="From Year" Text="{Binding FY1}" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="100" Margin="15, 0, 0, 0"/>    
+            <Entry Placeholder="To Year" Text="{Binding TY1}" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="100" Margin="15, 0, 0, 0"/>
+            <Entry Placeholder="Position" Text="{Binding P1}" FontSize="10" BackgroundColor="White" WidthRequest="50" Margin="15, 0, 15, 0"/>
+                
+            <Entry Placeholder="Company Name 2" Text="{Binding C2}" FontSize="10" BackgroundColor="White" WidthRequest="50" Margin="15, 20, 15, 0"/>
+            <Entry Placeholder="From Year" Text="{Binding FY2}" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="100" Margin="15, 0, 0, 0"/>    
+            <Entry Placeholder="To Year" Text="{Binding TY2}" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="100" Margin="15, 0, 0, 0"/>
+            <Entry Placeholder="Position" Text="{Binding P2}" FontSize="10" BackgroundColor="White" WidthRequest="50" Margin="15, 0, 15, 0"/>    
+                
+            <Label x:Name="lblEducation" Text="Education" TextColor="White" Font="15" Margin="15, 15, 0, 0"/>
+            <Entry x:Name="institute" Placeholder="Institute" Text="{Binding Inst}" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="200" Margin="15, 20, 15, 0"/>
+            <Entry x:Name="completed" Placeholder="Year Finished" Text="{Binding Com}" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="100" Margin="15, 0, 15, 0"/>         
+    
+            <Label x:Name="lblEReferences" Text="Refernces" TextColor="White" Font="15" Margin="15, 15, 0, 0"/>
+            <Entry Placeholder="Person" Text="{Binding pers}" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="200" Margin="15, 0, 15, 0"/>
+            <Entry Placeholder="Company" Text="{Binding Comp}" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="200" Margin="15, 0, 15, 0"/>
+            <Entry Placeholder="Phone" Text="{Binding Pho}" FontSize="10" BackgroundColor="White" HorizontalOptions="Start" WidthRequest="150" Margin="15, 0, 15, 0"/>
+
+ 
+
+            <Button Text="Save" TextColor="Navy" BackgroundColor="White" Margin="15,0,15,15" Clicked="saveBtn"/>
+
+            
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

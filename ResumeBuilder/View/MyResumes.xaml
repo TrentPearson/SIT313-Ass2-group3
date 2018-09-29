@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="Navy" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ResumeBuilder.View.MyResumes">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Button Text="back" TextColor="Navy" Font="15" BackgroundColor="White" WidthRequest="90" HorizontalOptions="Start" Margin="10, 10, 10 ,0" Clicked="backBtn"/>  
+            <ListView x:Name="resumeInfo" HasUnevenRows="true" x:FieldModifier="public">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding FName}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding Phone}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding Email}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                
+                
+                                <Label Text="Skills:" TextColor="White" Font="15" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding S1}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding S2}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding S3}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding S4}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding S5}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                
+                
+                                <Label Text="Professional Experiences:" TextColor="White" Font="15" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding CN1}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding FY1}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding TY1}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding P1}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                
+                                <Label Text="{Binding CN2}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding FY2}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding TY2}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                <Label Text="{Binding P2}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>    
+                
+                
+                                 <Label Text="Education:" TextColor="White" Font="15" Margin="15, 10, 0, 0"/>
+                                 <Label Text="{Binding Inst}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                 <Label Text="{Binding Com}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/> 
+                
+            
+                                 <Label Text="References:" TextColor="White" Font="15" Margin="15, 10, 0, 0"/>
+                                 <Label Text="{Binding Pers}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                 <Label Text="{Binding Comp}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                 <Label Text="{Binding Pho}" TextColor="White" Font="10" Margin="15, 10, 0, 0"/>
+                                    </StackLayout>
+                           </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>    
+                
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

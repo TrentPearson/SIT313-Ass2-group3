@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="Navy" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ResumeBuilder.View.HomePage">
+    <StackLayout>
+        <Button Text="Account" TextColor="Navy" Font="15" BackgroundColor="White" HeightRequest="40" WidthRequest="100" HorizontalOptions="End" Margin="0, 10, 10, 0" Clicked="accountBtn"/>
+        <Button Text="Create Resume" TextColor="Navy" FontSize="20" BackgroundColor="White" HeightRequest="100" Margin="30, 30, 30, 0" Clicked="createResume"/>
+        <Button Text="My Resume" TextColor="Navy" FontSize="20" BackgroundColor="White" HeightRequest="100" Margin="30, 0, 30, 0" Clicked="myResume"/>
+</StackLayout>  
+</ContentPage>

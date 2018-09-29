@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage BackgroundColor="Navy" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:ResumeBuilder" x:Class="ResumeBuilder.MainPage">
+        <StackLayout>
+        <Entry x:Name="US" Placeholder="Username" TextColor="White" FontSize="15" PlaceholderColor="White" HorizontalOptions="Fill" Margin="20, 30, 20, 0"/>
+        <Entry x:Name="PW" Placeholder="Password" TextColor="White" FontSize="15" PlaceholderColor="White" HorizontalOptions="Fill" Margin="20, 0, 20, 0"/>
+
+            <Button FontSize="20" BackgroundColor="Transparent" Text="Login" TextColor="White" Clicked="loginBtn" Margin="0,70,0,0"/>
+            <Button FontSize="20" BackgroundColor="Transparent" Text="Create Account" TextColor="White" Clicked="Button_Clicked"/>
+        </StackLayout>
+</ContentPage>

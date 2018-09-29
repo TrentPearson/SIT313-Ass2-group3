@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="Navy" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ResumeBuilder.CreateAccount">
+    <StackLayout>
+        <Entry x:Name="_firstname" Placeholder="First Name" TextColor="White" Text="{Binding FName}" FontSize="15" PlaceholderColor="White" WidthRequest="50" Margin="20, 0, 20, 0"/>
+        <Entry x:Name="_lastname" Placeholder="Last Name" TextColor="White" Text="{Binding LName}" FontSize="15" PlaceholderColor="White" WidthRequest="50" Margin="20, 0, 20, 0"/>
+        <Entry x:Name="_phone" Placeholder="Phone Number" TextColor="White" Text="{Binding Phone}" FontSize="15" PlaceholderColor="White" WidthRequest="50" Margin="20, 0, 20, 0"/>
+        <Entry x:Name="_email" Placeholder="Email" TextColor="White" Text="{Binding Email}" FontSize="15" PlaceholderColor="White" WidthRequest="50" Margin="20, 0, 20, 0"/>
+        <Entry x:Name="_password" Placeholder="Password" TextColor="White" Text="{Binding Password}" FontSize="15" PlaceholderColor="White" WidthRequest="50" Margin="20, 0, 20, 0"/>
+        
+        <Button x:Name="SignUpBtn" FontSize="20" BackgroundColor="Transparent" TextColor="White" Text="Sign Up" HeightRequest="50" Clicked="signup"/>
+        <Button x:Name="BackBtn" FontSize="20" BackgroundColor="Transparent" TextColor="White" Text="Back" HeightRequest="50" Clicked="backBtn"/>
+        </StackLayout>
+
+</ContentPage>

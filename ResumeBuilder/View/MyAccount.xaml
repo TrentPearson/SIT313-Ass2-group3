@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="Navy" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ResumeBuilder.View.MyAccount">
+    <StackLayout Spacing="0">
+        <Button Text="back" TextColor="Navy" Font="15" BackgroundColor="White" WidthRequest="90" HorizontalOptions="Start" Margin="10, 10, 10 ,0" Clicked="backBtn"/>  
+        <ListView x:Name="UserListView" HasUnevenRows="true">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell >
+                        <StackLayout Orientation="Vertical">
+                            <Label x:Name="FN" Text="{Binding FName}" Font="10" TextColor="White" Margin="20, 5, 0, 0"/>
+                            <Label x:Name="LN" Text="{Binding LName}" Font="10" TextColor="White" Margin="20, 5, 0, 0"/>
+                            <Label x:Name="PH" Text="{Binding Phone}" Font="10" TextColor="White" Margin="20, 5, 0, 0"/>
+                            <Label x:Name="EM" Text="{Binding Email}" Font="10" TextColor="White" Margin="20, 5, 0, 0"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Sign Out" Font="15" BackgroundColor="White" TextColor="Navy"  Margin="15,0,15,15" Clicked="signOut"/>
+</StackLayout>
+</ContentPage>

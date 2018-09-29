@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.2.0.839982" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Login.xaml" />
+    <EmbeddedResource Remove="View\Button.xaml" />
+    <EmbeddedResource Remove="View\ResumePreview.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Login.xaml.cs" />
+    <Compile Remove="View\Button.cs" />
+    <Compile Remove="View\Button.xaml.cs" />
+    <Compile Remove="View\MyAccount.cs" />
+    <Compile Remove="View\ResumePreview.xaml.cs" />
+    <Compile Remove="ViewModel\Account.cs" />
+    <Compile Remove="Data\ResumeItems.cs" />
+    <Compile Remove="Data\Info.cs" />
+    <Compile Remove="Data\ItemsDB.cs" />
+    <Compile Remove="Data\UserInfoDB.cs" />
+    <Compile Remove="Data\userInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
+    <Folder Include="Model\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\backgroundImage1.jpg" />
+    <None Remove="Image\backgroundImage1.jpg" />
+    <None Remove="backgroundImage2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="backgroundImage2.jpg" />
+  </ItemGroup>
+</Project>
